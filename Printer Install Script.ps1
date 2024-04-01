@@ -50,7 +50,7 @@ if($a -match 'Y' -or $a -match 'y'){
 $ErrorOccured = $false
 
     Write-Progress -Activity "Adding Printer - Printer 1" -Status "Task 2 of 2" -PercentComplete 100
-	try {add-printer -name "HS LMC" -drivername "Driver Name" -port "IP_xx.xx.x.xx" -ErrorAction Stop}
+	try {add-printer -name "printer 1" -drivername "Driver Name" -port "IP_xx.xx.x.xx" -ErrorAction Stop}
 	catch { "Error occured, printer may already be installed." 
 		$ErrorOccured=$true}
 	if (!$ErrorOccured) { "Printer installed! - HS LMC" }
@@ -79,7 +79,7 @@ if($a -match 'Y' -or $a -match 'y'){
 $ErrorOccured = $false
 
     Write-Progress -Activity "Adding Printer - Printer 2" -Status "Task 2 of 2" -PercentComplete 100
-	try {add-printer -name "HS LMC" -drivername "Driver Name" -port "IP_xx.xx.x.xx" -ErrorAction Stop}
+	try {add-printer -name "printer 2" -drivername "Driver Name" -port "IP_xx.xx.x.xx" -ErrorAction Stop}
 	catch { "Error occured, printer may already be installed." 
 		$ErrorOccured=$true}
 	if (!$ErrorOccured) { "Printer installed! - HS LMC" }
